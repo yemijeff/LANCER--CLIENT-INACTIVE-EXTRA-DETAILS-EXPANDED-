@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .navBar{
+        display: flex;
+        border-bottom: 2px solid#C4C4C4;
+        align-items: center;
+        height: 60px;
+    }
+    .buttons{
+        display: flex;
+        width: 30%;
+    }
+    a{
+        text-decoration: none;
+    }
+    .prev--btn{
+    cursor: pointer;
+    color: #C4C4C4;
+    font-weight: bold;
+    font-size: 25px;
+    width: 15%;
+    text-align: center;
+    border-right: 2px solid #C4C4C4;
+    }
+    .header{
+        width: 40%;
+        text-align: center;
+    }
+    .next-btn{
+        width: 30%;
+        font-size: 23px;
+        padding: 1rem;
+        background: rgba(196, 196, 196, 0.4);
+        text-align: center;
+        color: white;
+    }
+    .next{
+        color: white;
+    }
+</style>
+<body>
+    <div class="navBar">
+        <div class="buttons">
+                <a href="#" class="prev--btn">&#10005;</a>
+                <a href="#" class="prev--btn">&#10094;</a>
+        </div>
+        <div class="header">
+            <h1>Client</h1>
+        </div>
+        <div class="next-btn">
+           <a class="next" href="#">NEXT</a> 
+        </div>
+    </div>
+    <h1>Client Information</h1>
+    <form>
+        <h2>Business Information</h2>
+        <label for="Company Name">Company Name</label>
+        <input type="text" name="companyName" placeholder="e.g sunshine studio">
+        <h3>Business Address</h3>
+        <label for="Street & Number">Street & Number</label>
+        <input type="text" name="Street" placeholder="Street">
+        <input type="text" name="Number" placeholder="Number">
+        <label for="City & Zip Code">City & Zip Code</label>
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="postalCode" placeholder="Postal Code">
+        <label for="Country & State">Country & State</label>
+        <select>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Togo">Togo</option>
+            <option value="Rwanda">Rwanda</option>
+        </select>
+        <input type="text" name="state" placeholder="State">
+    </form>
+</body>
+</html>
