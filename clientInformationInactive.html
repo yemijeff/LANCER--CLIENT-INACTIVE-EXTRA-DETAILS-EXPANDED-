@@ -45,9 +45,10 @@
   }
   .form-row-1 > input {
     flex: 1;
+    
   }
-  #contact input[type="text"],
-  #contact input[type="email"] {
+  input[type="text"],
+  input[type="email"] {
     font: 400 12px/16px; 
   }
 
@@ -59,23 +60,22 @@
     width: 100%;
   }
 
-  #contact input[type="text"],
-  #contact input[type="email"] {
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
     border: 1px solid #ccc;
     background: #FFF;
-    margin: 0 0 5px;
+    margin: 0 0 5px 15px;
     padding: 15px;
   }
-
-  #contact input[type="text"]:hover,
-  #contact input[type="email"]:hover{
+  input[type="text"]:hover,
+  input[type="email"]:hover{
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
   }
-  #contact input:focus {
+  input:focus {
     outline: 0;
     border: 1px solid #aaa;
   }
@@ -107,7 +107,7 @@
     font-weight: 800;
   }
   h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600
   }
   h2 {
@@ -137,7 +137,7 @@
   }
   .container-a > div{
       border: 1px solid #ccc;
-      padding: 20px;
+      padding: 10px;
       text-align: center;
       font-size: 1rem;
   }
@@ -201,12 +201,10 @@
         text-align: center;
         margin-left: 0;
       }
-      #contact input[type="text"],
-      #contact input[type="email"] {
+      input[type="text"],
+      input[type="email"] {
         width: 100%;
-        border: 1px solid #ccc;
-        background: #FFF;
-        margin: 0 0 5px;
+        margin: 0 0 5px 10px;
         padding: 10px;
       }
   }
@@ -246,7 +244,7 @@
             <li class="form-row-1">
               <label for="townborn">Street & Address</label>
               <input placeholder="Street" type="text" tabindex="1" required autofocus>
-              <input placeholder="Number" class="in" type="text" tabindex="1" required autofocus>
+              <input placeholder="Number" type="text" tabindex="1" required autofocus>
             </li>
             <li class="form-row-1">
               <label for="townborn">City & ZIP Code</label>
