@@ -24,7 +24,7 @@
     position: relative;
     border: 1px solid #919191;
     padding: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   li {
     list-style: none;
@@ -111,7 +111,8 @@
     font-weight: 600
   }
   h2 {
-    text-align: center;
+    margin-top: 4rem;
+    margin-left: 20%;
   }
   .button-div {
     display: flex;
@@ -159,6 +160,7 @@
   .container-a>.box-4{
       flex:6;
       font-weight: 600;
+      font-size: 23px;
       
   }
   .box-1:hover, .box-2:hover, .box-3:hover {
@@ -181,13 +183,23 @@
       height: 100%;
       cursor: pointer;
   }
+  a {
+    color: #C4C4C4;
+  }
     @media only screen and (max-width: 600px) {
       .menuForSmallScreens {
           display: flex;
       }
       .container {
+        display: flex;
+        justify-content: center;
         border: none;
-        margin-top: 1rem;
+        margin-top: 0rem;
+      }
+      h2 {
+        margin-top: 1.5rem;
+        text-align: center;
+        margin-left: 0;
       }
       #contact input[type="text"],
       #contact input[type="email"] {
@@ -203,10 +215,11 @@
 <body>
   <header class="container-a menuForSmallScreens">
       <div class="box-1" style="max-width: 50px">
-        <i class="fa fa-times" aria-hidden="true"></i>
+        <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+        
       </div>
       <div class="box-2" style="max-width: 50px">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <a href=""><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
       </div>
       <div class="box-4">
         Client
